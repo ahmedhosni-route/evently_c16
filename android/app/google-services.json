@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "497509713939",
+    "project_id": "evenly-c16",
+    "storage_bucket": "evenly-c16.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:497509713939:android:7de8f52569c430a981d7e6",
+        "android_client_info": {
+          "package_name": "com.example.evently_c16_online"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBBziZoi_neouJQvIoJhmpgwYI68MACJZ0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
