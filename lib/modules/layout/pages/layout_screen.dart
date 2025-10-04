@@ -1,5 +1,7 @@
+import 'package:evently_c16_online/core/routes/app_route_name.dart';
 import 'package:evently_c16_online/core/theme/app_colors.dart';
 import 'package:evently_c16_online/modules/layout/manager/layout_provider.dart';
+import 'package:evently_c16_online/modules/layout/services/layout_services.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:icons_plus/icons_plus.dart';
@@ -10,7 +12,7 @@ class LayoutScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ChangeNotifierProvider(
-      create: (BuildContext context) => LayoutProvider(),
+      create: (BuildContext context) => LayoutProvider()..getFav(),
       child: Consumer<LayoutProvider>(
         builder: (context, provider, child) {
           return Scaffold(
@@ -20,7 +22,9 @@ class LayoutScreen extends StatelessWidget {
             floatingActionButton: FloatingActionButton(
               backgroundColor: AppColors.primaryColor,
               elevation: 0,
-              onPressed: () {},
+              onPressed: () {
+                Navigator.pushNamed(context, AppRouteName.addEvent);
+              },
               shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(360),
                   side: const BorderSide(color: Colors.white, width: 5)),

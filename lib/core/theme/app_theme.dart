@@ -13,6 +13,20 @@ abstract class AppTheme {
     ),
     primaryColor: AppColors.primaryColor,
     scaffoldBackgroundColor: AppColors.lightColor,
+
+appBarTheme: AppBarTheme(
+    iconTheme: IconThemeData(
+        color: AppColors.primaryColor
+    ),
+  color: Colors.transparent,
+  surfaceTintColor: Colors.transparent,
+  elevation: 0,
+  centerTitle: true,
+  titleTextStyle: TextStyle(
+    fontSize: 24,
+    color: AppColors.primaryColor
+  )
+),
 inputDecorationTheme: InputDecorationTheme(
         border: OutlineInputBorder(
             borderRadius: BorderRadius.circular(16),
@@ -73,6 +87,19 @@ inputDecorationTheme: InputDecorationTheme(
     ),
     primaryColor: AppColors.primaryColor,
     scaffoldBackgroundColor: AppColors.darkColor,
+    appBarTheme: AppBarTheme(
+      iconTheme: IconThemeData(
+        color: AppColors.primaryColor
+      ),
+        color: Colors.transparent,
+        surfaceTintColor: Colors.transparent,
+        elevation: 0,
+        centerTitle: true,
+        titleTextStyle: TextStyle(
+            fontSize: 24,
+            color: AppColors.primaryColor
+        )
+    ),
     inputDecorationTheme: InputDecorationTheme(
         border: OutlineInputBorder(
             borderRadius: BorderRadius.circular(16),

@@ -4,4 +4,5 @@ class AppRouteName{
   static const String login = "/login";
   static const String createAccount = "/create-account";
   static const String layout = "/layout";
+  static const String addEvent = "/add-event";
 }
